@@ -1,0 +1,23 @@
+{
+  "name": "test-repo",
+  "version": "1.0.0",
+  "description": "This is a test repository for Git learning purposes.",
+  "homepage": "https://github.com/Gajendrakmt9079/new-repo#readme",
+  "bugs": {
+    "url": "https://github.com/Gajendrakmt9079/new-repo/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gajendrakmt9079/new-repo.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
