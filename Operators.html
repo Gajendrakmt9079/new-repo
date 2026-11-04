@@ -104,19 +104,38 @@ is paid*/
     // arithmetic operators: +, -, *, /, %, **
     // assignment operators: =, +=, -=, *=, /=, %=
 
-    // var mobilePrice = 100 * 4;
-    // var mobileQuantity = 4;
-    // var laptopPrice = 200 * 2;
-    // var laptopQuantity = 2;
-    // var desktopPrice = 300 * 1;
-    // var desktopQuantity = 1;
-    // var total = mobilePrice + laptopPrice + desktopPrice;
-    // var discount = 10;
-    // total -= discount; // total = total - discount
-    // var tax = 5;
-    // total += tax; // total = total + tax
-    // var finalTotal = total;
+// // Item unit prices and quantities
+// var mobilePrice = 100;
+// var mobileQuantity = 4;
+// var laptopPrice = 200;
+// var laptopQuantity = 2;
+// var desktopPrice = 300;
+// var desktopQuantity = 1;
 
-    // console.log("Total after discount and tax: " + finalTotal);
+// // Line totals — arithmetic operator *
+// var mobileTotal = mobilePrice * mobileQuantity;      // 400
+// var laptopTotal = laptopPrice * laptopQuantity;      // 400
+// var desktopTotal = desktopPrice * desktopQuantity;   // 300
+
+// // Build the bill step by step — assignment operator +=
+// var total = 0;
+// total += mobileTotal;    // 400
+// total += laptopTotal;    // 800
+// total += desktopTotal;   // 1100
+
+// // 10% discount — uses *, / and -= together
+// var discountRate = 10;
+// total -= total * discountRate / 100;   // 1100 - 110 = 990
+
+// // 5% tax on the discounted amount
+// var taxRate = 5;
+// total += total * taxRate / 100;        // 990 + 49.5 = 1039.5
+
+// // Bonus: 3 friends split the bill — operator /=
+// var perPerson = total;
+// perPerson /= 3;
+
+// console.log("Bill total: " + total);            // 1039.5
+// console.log("Each person pays: " + perPerson);  // 346.5
   </script>
 </html>

@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Conditional Statements</h1>
+  </body>
+  <script>
+    // Q32. Write a program to check whether a number is positive, negative, or zero
+
+    // var number = 0;
+    // if (number > 0) {
+    //     console.log("Positive");
+    // } else if (number < 0) {
+    //     console.log("Negative");
+    // } else if (number === 0) {
+    //     console.log("Zero");
+    // }
+    // else {
+    //     console.log("Invalid input");
+    // }
+
+    // Q33. Write a program to check whether a number is even or odd
+    // var number = 24;
+    // if (number % 2 === 0) {
+    //     console.log("Even");
+    // } else if (number % 2 !== 0 && typeof number === "number") {
+    //     console.log("Odd");
+    // } else {
+    //     console.log("Invalid input");
+    // }
+
+    // Q34. Write a program to check whether a person is eligible to vote. Age must be 18 or above.
+    // var age = 10;
+    // if (age >= 18) {
+    //     console.log("Eligible to vote");
+    // } else {
+    //     console.log("Not eligible to vote");
+    // }
+
+    // Q35. Write a program to find the largest of two numbers.
+
+    //    var num1 = 10;
+    //    var num2 = 10;
+    //    if (num1 > num2) {
+    //        console.log("Largest is " + num1);
+    //    } else if (num1 < num2) {
+    //        console.log("Largest is " + num2);
+    //    } else if (num1 === num2) {
+    //        console.log("Both are equal");
+    //    }
+
+    // Q36. Write a program to find the largest of three numbers
+
+    //  var num1 = 10;
+    //  var num2 = 20;
+    //  var num3 = 30;
+    //  if (num1 > num2 && num1 > num3) {
+    //      console.log("Largest is " + num1);
+    //  } else if (num2 > num1 && num2 > num3) {
+    //      console.log("Largest is " + num2);
+    //  } else if (num3 > num1 && num3 > num2) {
+    //      console.log("Largest is " + num3);
+    //  } else {
+    //      console.log("Invalid input");
+    //  }
+
+    // Q37. Create a grading system based on marks:
+    // 90–100: Grade A
+    // 80–89: Grade B
+    // 70–79: Grade C
+    // 60–69: Grade D
+    // Below 60: Fail
+
+    // var marks = prompt("Enter your marks");
+    // console.log("Marks: " + marks);
+    // if (marks >= 90 && marks <= 100) {
+    //     console.log("Grade A");
+    // } else if (marks >= 80 && marks < 90) {
+    //     console.log("Grade B");
+    // } else if (marks >= 70 && marks < 80) {
+    //     console.log("Grade C");
+    // } else if (marks >= 60 && marks < 70) {
+    //     console.log("Grade D");
+    // } else if (marks < 60) {
+    //     console.log("Fail");
+    // } else {
+    //     console.log("Invalid input");
+    // }
+
+    // Q38. Create a login validation program.
+    // Conditions:
+    // Correct username: admin
+    // Correct password: 12345
+    // If both are correct, print "Login Successful".
+    // Otherwise, print "Invalid Username or Password"
+
+    // var username = "admin";
+    // var password = "12345";
+
+    // var enteredUsername = prompt("Enter your username");
+    // var enteredPassword = prompt("Enter your password");
+
+    // if (enteredUsername !== username) {
+    //   console.log("Invalid Username");
+    // } else if (enteredUsername === username && enteredPassword !== password) {
+    //   console.log("Invalid Password");
+    // } else if (enteredUsername === username && enteredPassword === password) {
+    //   console.log("Login Successful");
+    // } else {
+    //   console.log("Invalid Username or Password");
+    // }
+
+
+    // Q39. Write a program to check whether a year is a leap year.
+// () , / ,* , - , +
+    // var year = 200;
+    // // year % 100 === 0 means it's a century year 
+    // // (true && false) || true
+    // // false || true
+    // // true
+    // if (year % 4 === 0 && year % 100 !== 0 || year % 400 === 0) {
+    //     console.log("Leap year");
+    // } else {
+    //     console.log("Not a leap year");
+    // }
+      
+
+    // Q40. Create a simple electricity bill calculator:
+    // Units up to 100: ₹5 per unit (fixed charge)
+    // Units from 101 to 200: ₹7 per unit
+    // Units above 200: ₹10 per unit
+
+    // var totalUnits = prompt("Enter total units consumed");
+    // var bill = 0;
+
+    // if (totalUnits <= 100) {
+    //     console.log("Units up to 100: ₹5 per unit");
+    //     bill = totalUnits * 5;
+    // } else if (totalUnits > 100 && totalUnits <= 200) {
+    //     console.log("Units from 101 to 200: ₹7 per unit");
+    //     bill = 100 * 5 + (totalUnits - 100) * 7;
+    // } else {
+    //     console.log("Units above 200: ₹10 per unit");
+    //     bill = 100 * 5 + 100 * 7 + (totalUnits - 200) * 10;
+    // }
+
+    // console.log("Electricity Bill: ₹" + bill);
+
+
+    // Q41. Create a discount calculator:
+    // Purchase above ₹5000: 20% discount
+    // Purchase above ₹3000: 10% discount
+    // Purchase above ₹1000: 5% discount
+    // Otherwise: No discount
+    // Print the original price, discount amount, and final price.
+
+//  var originalPrice = prompt("Enter the original price");
+//  var discount = 0;
+//  var finalPrice = 0;
+
+//  if (originalPrice > 5000) {
+//     discount = originalPrice * 0.2;
+//     finalPrice = originalPrice - discount;
+//  } else if (originalPrice > 3000) {
+//     discount = originalPrice * 0.1;
+//     finalPrice = originalPrice - discount;
+//  } else if (originalPrice > 1000) {
+//     discount = originalPrice * 0.05;
+//     finalPrice = originalPrice - discount;
+//  } else {
+//     discount = 0;
+//     finalPrice = originalPrice;
+//  }
+
+//  console.log("Original Price: ₹" + originalPrice);
+//  console.log("Discount Amount: ₹" + discount);
+//  console.log("Final Price: ₹" + finalPrice);
+
+// Q42. Create a program to check whether a student passes or fails.
+// Conditions:
+// Minimum 35 marks in each subject.
+// There are three subjects.
+// The student must pass all three subjects.
+
+// var english = prompt("Enter English marks");
+// var math = prompt("Enter Math marks");
+// var science = prompt("Enter Science marks");
+// // true && true 
+// // true && true && true 
+// // true || false || false 
+// if (english >= 35 && math >= 35 && science >= 35) {
+//     console.log("Student passes");
+// } else {
+//     console.log("Student fails");
+// }
+
+
+  </script>
+</html>
