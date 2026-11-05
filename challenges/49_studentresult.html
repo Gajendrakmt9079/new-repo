@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>challenge</title>
+</head>
+
+<body>
+    <h1>Student Results</h1>
+
+</body>
+<script>
+    // JavaScript code for handling student results
+    let studentName = "Jyosna";
+    let maths = 90;
+    let science = 80;
+    let english = 70;
+    let totalmarks = maths + science + english;
+    let percentage = (totalmarks / 300) * 100;
+
+    console.log("Name: " + studentName);
+    console.log("Maths: " + maths);
+    console.log("Science: " + science);
+    console.log("English: " + english);
+    console.log("Total Marks: " + totalmarks);
+    console.log("Percentage: " + percentage);
+    if (percentage >= 90) {
+        console.log("Grade: A");
+    }
+    else if (percentage >= 80) {
+        console.log("Grade: B");
+    }
+    else if (percentage >= 70) {
+        console.log("Grade: C");
+    }
+    else if (percentage >= 60) {
+        console.log("Grade: D");
+    }
+    else if (percentage < 60) {
+        console.log("Grade: F");
+    }
+    else if (percentage < 35) {
+        console.log("Fail");
+    }
+    else {
+        console.log("Invalid percentage");
+    }
+</script>
+
+</html>
