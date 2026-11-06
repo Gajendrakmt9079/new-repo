@@ -8,39 +8,47 @@
 <body>
     hello 
     <script>
-       let name = "dimple";
-       let sub1 = 80;
-       let sub2 = 70;
-       let sub3 = 90;
-       let sub4 = 60;
-       let sub5 = 80;
-       let totalMarks = sub1 + sub2 + sub3 + sub4 + sub5;
-       let percentage = totalMarks / 5;
-       if (sub1 >= 35 && sub2 >= 35 && sub3 >= 35 && sub4 >= 35 && sub5 >= 35) {
+       let name = "Reddy";
+       let subject1 = 85;
+       let subject2 = 76;
+       let subject3 = 90;
+       let subject4 = 65;
+       let subject5 = 80;
+       let total = subject1 + subject2 + subject3 + subject4 + subject5;
+       let percentage = total / 5;
+       if (
+        subject1 >= 35 &&
+        subject2 >= 35 &&
+        subject3 >= 35 &&
+        subject4 >= 35 &&
+        subject5 >= 35
+    ) {
         result = "Pass";
-      } 
-      else {
+    } 
+    else {
         result = "Fail";
-      }
-      let grade;
-      if (result === "Fail") {
+    }
+    let grade;
+    if (result === "Fail") {
         grade = "F";
-      } 
-      else if (percentage >= 90) {
+    } 
+    else if (percentage >= 90) {
         grade = "A";
-     } 
-     else if (percentage >= 75) {
+    } 
+    else if (percentage >= 75) {
         grade = "B";
     } else if (percentage >= 60) {
         grade = "C";
     } else if (percentage >= 35) {
         grade = "D";
-    }
-    console.log("Student Name: " + name);
-    console.log("Total Marks: " + total);
-    console.log("Percentage: " + percentage + "%");
-    console.log("Grade: " + grade);
-    console.log("Result: " + result);
+}
+
+
+console.log("Student Name: " + name);
+console.log("Total Marks: " + total);
+console.log("Percentage: " + percentage + "%");
+console.log("Grade: " + grade);
+console.log("Result: " + result);
     </script>
 </body>
 </html>
