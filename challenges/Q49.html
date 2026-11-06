@@ -8,44 +8,39 @@
 <body>
     hello 
     <script>
-       let english = 100
-       let math = 100;
-       let science = 100;
-       let social = 100;
-       let telugu = 100;
-       let totalMarks = english + math + science + social + telugu
-       let percentage = (totalMarks / 500) * 100
-       let grade = prompt("Enter marks");
-       switch (grade) {
-        case "95":
-            console.log("Grade A");
-            break;
-        case "85":
-            console.log("Grade B");
-            break;
-        case "65":
-            console.log("Grade C");
-            break;
-        case "55":
-            console.log("Grade D");
-            break;
-        case "45":
-            console.log("Grade E");
-            break;
-         case "35":
-            console.log("pass or fail");
-            var enterMarks = prompt("Enter marks");
-            if (parseInt(enterMarks) > 90) { 
-                console.log("Pass");
-            }
-            else {
-                console.log("Fail");
-            }
-            break;
-         default:
-            console.log("Invalid input");
-            break;
+       let name = "dimple";
+       let sub1 = 80;
+       let sub2 = 70;
+       let sub3 = 90;
+       let sub4 = 60;
+       let sub5 = 80;
+       let totalMarks = sub1 + sub2 + sub3 + sub4 + sub5;
+       let percentage = totalMarks / 5;
+       if (sub1 >= 35 && sub2 >= 35 && sub3 >= 35 && sub4 >= 35 && sub5 >= 35) {
+        result = "Pass";
+      } 
+      else {
+        result = "Fail";
+      }
+      let grade;
+      if (result === "Fail") {
+        grade = "F";
+      } 
+      else if (percentage >= 90) {
+        grade = "A";
+     } 
+     else if (percentage >= 75) {
+        grade = "B";
+    } else if (percentage >= 60) {
+        grade = "C";
+    } else if (percentage >= 35) {
+        grade = "D";
     }
+    console.log("Student Name: " + name);
+    console.log("Total Marks: " + total);
+    console.log("Percentage: " + percentage + "%");
+    console.log("Grade: " + grade);
+    console.log("Result: " + result);
     </script>
 </body>
 </html>
