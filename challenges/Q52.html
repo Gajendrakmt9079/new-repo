@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <h1>Employee Salary Calculator</h1>
+</body>
+<script>
+    // Q52. Employee Salary Calculator
+    // Store an employee's basic salary.
+    // Calculate:
+    // HRA = 20% of basic salary
+    // DA = 10% of basic salary
+    // Bonus = 5% of basic salary
+    // Calculate the gross salary and print the complete salary breakdown.
+
+    var basicSalary = prompt("Enter basic salary");
+    var hra = Number(basicSalary) * 0.2;
+    var da = Number(basicSalary) * 0.1;
+    var bonus = Number(basicSalary) * 0.05;
+    var grossSalary = Number(basicSalary) + hra + da + bonus;
+    console.log("Basic Salary: " + basicSalary);
+    console.log("HRA: " + hra);
+    console.log("DA: " + da);
+    console.log("Bonus: " + bonus);
+    console.log("Gross Salary: " + grossSalary);
+</script>
+</html>
