@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>50</title>
+</head>
+<body>
+  <h1>
+    Create a shopping calculator with:
+  </h1>
+  <h2>
+    <ul>
+    <li>
+    Product name
+  </li>
+  <li>
+    Product price
+  </li>
+  <li>
+    Product quantity
+  </li>
+  <li>
+    Discount percentage
+  </li>
+  <li>
+    GST percentage
+  </li>
+  </ul>
+  </h2>
+</body>
+<script>
+//   Calculate:
+// Subtotal
+// Discount amount
+// Amount after discount
+// GST amount
+// Final payable amount
+let productName = prompt("enter Product Name");
+let productPrice = prompt("enter Product Price");
+let productQuantity = prompt("enter Product Quantity");
+let discountPercentage = prompt("enter Discount Percentage");
+let gstPercentage = prompt("enter GST Percentage");
+let subtotal = productPrice * productQuantity;
+let discountAmount = subtotal * (discountPercentage / 100);
+let amountAfterDiscount = subtotal - discountAmount;
+let gstAmount = amountAfterDiscount * (gstPercentage / 100);
+let finalPayableAmount = amountAfterDiscount + gstAmount;
+console.log("Product Name: " + productName);
+console.log("Product Price: " + productPrice);
+console.log("Product Quantity: " + productQuantity);
+console.log("Discount Percentage: " + discountPercentage);
+console.log("GST Percentage: " + gstPercentage);
+console.log("Subtotal: " + subtotal);
+console.log("Discount Amount: " + discountAmount);
+console.log("Amount After Discount: " + amountAfterDiscount);
+console.log("GST Amount: " + gstAmount);
+console.log("Final Payable Amount: " + finalPayableAmount);
+</script>
+</html>

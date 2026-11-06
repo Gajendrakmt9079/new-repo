@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>51</title>
+</head>
+<body>
+<h1>
+  Q51. ATM Simulation
+Create a simple ATM program. <br>
+Initial balance: ₹10,000
+</h1>
+</body>
+<script>
+//   Options:
+// 1.  Check balance
+// 2.  Deposit money
+// 3.  Withdraw money
+// Conditions:
+// Deposit amount must be greater than zero.
+// Withdrawal amount must be greater than zero.
+// Withdrawal cannot exceed the available balance.
+// Use switch.
+var option =prompt("Enter the Options 1 to 3")
+var balance = 10000
+switch(option){
+case "1":{
+ console.log("Check Balance");
+        console.log("Your balance is " + balance);
+        break;
+}
+case "2":{
+         console.log("Deposit Money");
+        var deposit = prompt("Enter the amount you want to deposit");
+        if(deposit>0){
+        balance += parseInt(deposit);
+        console.log("Your balance is " + balance);
+        break;
+}else{
+  console.log("Invalid Deposit Amount");
+  break;
+}
+}
+case "3":{
+  console.log("Withdraw Money");
+        var withdraw = prompt("Enter the amount you want to withdraw");
+        if (parseInt(withdraw) > balance) {
+            console.log("Insufficient balance");
+        } else {
+            balance -= parseInt(withdraw);
+            console.log("Your balance is " + balance);
+        }
+        break;
+}
+default:{
+  console.log("Invalid input");
+        break;
+}
+}
+</script>
+</html>
