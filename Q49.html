@@ -1,6 +1,52 @@
-clone repo 
-create own branch 
-pull request form dev-main
-create 5 files for all assignments
-solve all assignments
-push code in own branch 
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>49</title>
+  </head>
+  <body>
+    <h1>
+      Q49. Student Result Management Create a program that stores a student's
+      name and marks in five subjects. Calculate:
+      <ul>
+        <li>Total marks</li>
+        <li>Percentage</li>
+        <li>Grade</li>
+        <li>Pass or Fail</li>
+      </ul>
+      A student must score at least 35 in every subject to pass.
+    </h1>
+  </body>
+  <script>
+      var studentName =prompt("Enter Student Name")
+    var  math = prompt("Enter Math Marks")
+    var physics = prompt("Enter Physics Marks")
+    var chemistry = prompt("Enter Chemistry Marks")
+    var english = prompt("Enter English Marks")
+    var biology = prompt("Enter Biology Marks")
+    console.log("Student Name : " + studentName);
+    let totalMarks =
+      Number(math) +
+      Number(physics) +
+      Number(chemistry) +
+      Number(english) +
+      Number(biology);
+    console.log("Total Marks : " + totalMarks);
+    var percentage = (totalMarks / 500) * 100;
+    console.log("Percentage : " + percentage);
+
+    var grade = percentage >= 90 ? "A" : percentage >= 80 ? "B" : "C";
+    console.log("Grade : " + grade);
+
+    var passOrFail =
+      math >= 35 &&
+      physics >= 35 &&
+      chemistry >= 35 &&
+      english >= 35 &&
+      biology >= 35
+        ? "Pass"
+        : "Fail";
+    console.log("Pass or Fail : " + passOrFail);
+  </script>
+</html>
