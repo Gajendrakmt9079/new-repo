@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    hello 
+    <script>
+       let english = 100
+       let math = 100;
+       let science = 100;
+       let social = 100;
+       let telugu = 100;
+       let totalMarks = english + math + science + social + telugu
+       let percentage = (totalMarks / 500) * 100
+       let grade = prompt("Enter marks");
+       switch (grade) {
+        case "95":
+            console.log("Grade A");
+            break;
+        case "85":
+            console.log("Grade B");
+            break;
+        case "65":
+            console.log("Grade C");
+            break;
+        case "55":
+            console.log("Grade D");
+            break;
+        case "45":
+            console.log("Grade E");
+            break;
+         case "35":
+            console.log("pass or fail");
+            var enterMarks = prompt("Enter marks");
+            if (parseInt(enterMarks) > 90) { 
+                console.log("Pass");
+            }
+            else {
+                console.log("Fail");
+            }
+            break;
+         default:
+            console.log("Invalid input");
+            break;
+    }
+    </script>
+</body>
+</html>
