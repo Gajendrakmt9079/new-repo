@@ -7,14 +7,49 @@
 </head>
 <body>
     hello 
-    <script>
-       let english = prompt("Enter English marks");
-       let math = prompt("Enter Math marks");
-       let science = prompt("Enter Science marks");
-       let social = prompt("Enter Science marks");
-       let telugu = prompt("Enter Science marks");
-       let totalMarks = (english + math + science + social + telugu) / 5
-       let percentage = (totalMarks)
+     <script>
+        let name = "dimple";
+        let subject1 = 90;
+        let subject2 = 96;
+        let subject3 = 90;
+        let subject4 = 85;
+        let subject5 = 90;
+        let total = subject1 + subject2 + subject3 + subject4 + subject5;
+        let percentage = total / 5;
+        let result;
+        if (
+            subject1 >= 35 &&
+            subject2 >= 35 &&
+            subject3 >= 35 &&
+            subject4 >= 35 &&
+            subject5 >= 35
+        ) {
+            result = "Pass";
+        } 
+        else {
+            result = "Fail";
+        }
+        let grade;
+        if (percentage >= 90) {
+            grade = "A";
+        } 
+        else if (percentage >= 75) {
+            grade = "B";
+        } 
+        else if (percentage >= 60) {
+            grade = "C";
+        }
+        else if (percentage >= 35) {
+            grade = "D";
+        }
+        else {
+            grade = "F";
+        }
+        console.log("Student Name: " + name);
+        console.log("Total Marks: " + total);
+        console.log("Percentage: " + percentage + "%");
+        console.log("Grade: " + grade);
+        console.log("Result: " + result);  
     </script>
 </body>
 </html>
