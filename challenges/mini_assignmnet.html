@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    hello
+    <script>
+        
+let name = prompt("Enter Student Name:");
+let age = Number(prompt("Enter Student Age:"));
+let percentage = Number(prompt("Enter 12th Percentage:"));
+let maths = Number(prompt("Enter Maths Marks:"));
+let english = Number(prompt("Enter English Marks:"));
+
+console.log("Student Name: " + name);
+console.log("Age: " + age);
+console.log("Percentage: " + percentage);
+console.log("Maths Marks: " + maths);
+console.log("English Marks: " + english);
+
+if (age >= 17 && percentage >= 60 && maths >= 50 && english >= 40) {
+    console.log("Student is Eligible for Admission");
+}
+else {
+    console.log("Student is Not Eligible for Admission");
+
+    if (age < 17) {
+        console.log("Reason: Age must be at least 17");
+    }
+    if (percentage < 60) {
+        console.log("Reason: Percentage must be at least 60");
+    }
+    if (maths < 50) {
+        console.log("Reason: Maths marks must be at least 50");
+    }
+    if (english < 40) {
+        console.log("Reason: English marks must be at least 40");
+    }
+}
+let category;
+
+if (percentage >= 90) {
+    category = "Excellent";
+}
+else if (percentage >= 80) {
+    category = "Very Good";
+}
+else if (percentage >= 70) {
+    category = "Good";
+}
+else if (percentage >= 60) {
+    category = "Average";
+}
+else {
+    category = "Below Average";
+}
+
+switch (category) {
+    case "Excellent":
+        console.log("Category: Excellent");
+        break;
+
+    case "Very Good":
+        console.log("Category: Very Good");
+        break;
+
+    case "Good":
+        console.log("Category: Good");
+        break;
+
+    case "Average":
+        console.log("Category: Average");
+        break;
+
+    default:
+        console.log("Category: Below Average");
+}
+
+    </script>
+</body>
+</html>

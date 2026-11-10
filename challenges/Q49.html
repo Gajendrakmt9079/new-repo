@@ -8,48 +8,59 @@
 <body>
     hello 
      <script>
-        let name = "dimple";
-        let subject1 = 90;
-        let subject2 = 96;
-        let subject3 = 90;
-        let subject4 = 85;
-        let subject5 = 90;
-        let total = subject1 + subject2 + subject3 + subject4 + subject5;
-        let percentage = total / 5;
+        let name = "Dimple";
+        let sub1 = 90;
+        let sub2 = 96;
+        let sub3 = 90;
+        let sub4 = 85;
+        let sub5 = 90;
+        console.log("Student Name: " + name);
+        let totalMarks = sub1 + sub2 + sub3 + sub4 + sub5;
+        console.log("Total Marks: " + totalMarks);
+        let percentage = totalMarks / 5;
+        console.log("Percentage: " + percentage + "%");
         let result;
-        if (
-            subject1 >= 35 &&
-            subject2 >= 35 &&
-            subject3 >= 35 &&
-            subject4 >= 35 &&
-            subject5 >= 35
-        ) {
+        if (sub1 >= 35 && sub2 >= 35 && sub3 >= 35 && sub4 >= 35 && sub5 >= 35) {
             result = "Pass";
-        } 
+        }
         else {
             result = "Fail";
         }
+        console.log("Result: " + result);
         let grade;
         if (percentage >= 90) {
-            grade = "A";
-        } 
+            grade = "90";
+        }
         else if (percentage >= 75) {
-            grade = "B";
-        } 
+            grade = "75";
+        }
         else if (percentage >= 60) {
-            grade = "C";
-        }
+            grade = "60";
+        } 
         else if (percentage >= 35) {
-            grade = "D";
-        }
+            grade = "35";
+        } 
         else {
             grade = "F";
         }
-        console.log("Student Name: " + name);
-        console.log("Total Marks: " + total);
-        console.log("Percentage: " + percentage + "%");
-        console.log("Grade: " + grade);
-        console.log("Result: " + result);  
+        switch (grade) {
+            case "90":
+                console.log("Grade A");
+                break;
+            case "75":
+                console.log("Grade B");
+                break;
+            case "60":
+                console.log("Grade C");
+                break;
+            case "35":
+                console.log("Grade D");
+                break;
+            default:
+                console.log("Grade F");
+                break;
+        }
+        
     </script>
 </body>
 </html>
