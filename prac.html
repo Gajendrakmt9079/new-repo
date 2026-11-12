@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    hello
+    <script>
+        let student_name = prompt("Enter Name:");
+        console.log("Student name:",student_name);
+        let student_age = Number(prompt("Enter age:"));
+        console.log("Student Age:",student_age);
+        let percentage_12th = Number(prompt("Enter 12th Percentage:"));
+        console.log("Percenatge of 12th:",percentage_12th);
+        let student_maths_marks = Number(prompt("Enter Maths Marks"));
+        console.log("Maths:",student_maths_marks);
+        let student_english_marks = Number(prompt("Enter English Marks"));
+        console.log("English:",student_english_marks);
+        if ( student_age >= 17 && percentage_12th >= 60 && student_maths_marks >=50 && student_english_marks >= 40){
+            console.log("Student is Eligible for Admission");
+        }
+        else if (student_age < 17){
+            console.log("Student is not eligible for admission because age is below 17");  
+        }
+        else if ( percentage_12th < 60){
+            console.log("Student is not eligible for admission because 12th percentage is below 70");
+            
+        }
+        else if (student_maths_marks < 50){
+            console.log("Student is not eligible for admission because maths marks is below 50");
+        }
+        else if (student_english_marks < 40){
+            console.log("Student is not eligible for admission because english marks is below 40")
+        }
+        else{
+            console.log("Student is not eligible for admission");
+        }
+        let category;
+        if (percentage_12th >= 90) {
+            category = "Excellent"
+        }
+        else if (percentage_12th >= 80) {
+            category = "VeryGood";
+        }
+        else if (percentage_12th >= 70) {
+           category = "Good";
+        }
+        else if (percentage_12th >= 60) {
+           category = "Average";
+        }
+        else {
+            category = "Below Average";
+        }
+        switch (category) {
+            case "Excellent":
+                console.log("Category: Excellent");
+                break;
+            case "VeryGood":
+                console.log("Category: VeryGood");
+                break;
+            case "Good":
+                console.log("Category: Good");
+                break;
+            case "Average":
+                console.log("Category: Average");
+                break;
+            default:
+                console.log("Category: Below Average");
+                break;
+        }
+    </script>
+</body>
+</html>
