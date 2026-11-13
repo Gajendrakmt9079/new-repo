@@ -21,45 +21,28 @@
         console.log("Percentage: " + percentage + "%");
         let result;
         if (sub1 >= 35 && sub2 >= 35 && sub3 >= 35 && sub4 >= 35 && sub5 >= 35) {
-            result = "Pass";
+            console.log("Result : Pass");
         }
         else {
-            result = "Fail";
+           console.log("Result : Fail");
         }
-        console.log("Result: " + result);
         let grade;
         if (percentage >= 90) {
-            grade = "90";
+            console.log("Grade A");
         }
         else if (percentage >= 75) {
-            grade = "75";
+            console.log("Grade B");
         }
         else if (percentage >= 60) {
-            grade = "60";
+            console.log("Grade C");
         } 
         else if (percentage >= 35) {
-            grade = "35";
+            console.log("Grade D");
         } 
         else {
-            grade = "F";
+            console.log("Grade F");
         }
-        switch (grade) {
-            case "90":
-                console.log("Grade A");
-                break;
-            case "75":
-                console.log("Grade B");
-                break;
-            case "60":
-                console.log("Grade C");
-                break;
-            case "35":
-                console.log("Grade D");
-                break;
-            default:
-                console.log("Grade F");
-                break;
-        }
+        
         
     </script>
 </body>
