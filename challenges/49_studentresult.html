@@ -17,15 +17,28 @@
     let maths = 90;
     let science = 80;
     let english = 70;
-    let totalmarks = maths + science + english;
-    let percentage = (totalmarks / 300) * 100;
+    let social = 60;
+    let hindi = 50;
+    let totalmarks = maths + science + english + social + hindi;
+    let percentage = (totalmarks / 500) * 100;
 
     console.log("Name: " + studentName);
     console.log("Maths: " + maths);
     console.log("Science: " + science);
     console.log("English: " + english);
+    console.log("Social: " + social);
+    console.log("Hindi: " + hindi);
     console.log("Total Marks: " + totalmarks);
     console.log("Percentage: " + percentage);
+    let result;
+    if(maths >35 && science > 35 && english > 35 && social > 35 && hindi > 35) {
+        result = "Pass";
+    } else {
+        result = "Fail";
+    }
+    
+    console.log("Result: " + result);
+
     if (percentage >= 90) {
         console.log("Grade: A");
     }

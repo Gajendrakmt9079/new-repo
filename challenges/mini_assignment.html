@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Section:10 Mini Assignment</title>
+</head>
+<body>
+    <h1>Section:10 Mini Assignment</h1>
+    <!-- Student ability admission system -->
+    
+</body>
+<script>
+console.log("Section:10 Mini Assignment");
+let studentName = prompt("Enter student name");
+console.log("Student Name: " + studentName);
+let studentAge = prompt("Enter student age");
+console.log("Student Age: " + studentAge);
+let percentageOf12th = prompt("Enter percentage in 12th");
+console.log("Percentage in 12th: " + percentageOf12th);
+let marksInMaths = prompt("Enter marks in Maths");
+console.log("Marks in Maths: " + marksInMaths);
+let marksInEnglish = prompt("Enter marks in English");
+console.log("Marks in English: " + marksInEnglish);
+let age =prompt("enter age");
+let marksInMath = prompt("enter marks in maths");
+
+if(age>=17 && percentageOf12th>=60 && marksInMaths>=40 && marksInEnglish>=40)
+{
+    console.log("Student is eligible for admission");
+}
+else if(age<17)
+{
+    console.log("Student is not eligible for admission due to age");
+}
+else if(percentageOf12th<60)
+{
+    console.log("Student is not eligible for admission due to percentage in 12th");
+}
+else if(marksInMaths<40)
+{
+    console.log("Student is not eligible for admission due to marks in Maths");
+}
+else if(marksInEnglish<40)
+{
+    console.log("Student is not eligible for admission due to marks in English");
+}
+else{
+    console.log("Student is not eligible for admission");
+}
+// BONUS
+let category;
+
+if(percentageOf12th>90)
+{
+    category = "excellent";
+}
+else if(percentageOf12th>80)
+{
+    category = "very good";
+}
+else if(percentageOf12th>70)
+{
+    category = "good";
+}
+else if(percentageOf12th>60)
+{
+    category = "average";
+}
+else
+{
+    category = "below average";
+}
+switch (category) {
+    case "excellent":
+        console.log( "Category: " + "Excellent");
+        break;
+    case "very good":
+        console.log("Category: Very Good");
+        break;
+    case "good":
+        console.log("Category: Good");
+        break;
+    case "average":
+        console.log("Category: Average");
+        break;
+    default:
+        console.log("Category: Below Average");
+        break;
+}
+
+
+</script>
+</html>
